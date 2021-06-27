@@ -29,9 +29,12 @@ func main() {
 			zip:   3224424,
 		},
 	}
-	fmt.Println(guy)
-	// fmt.Printf("%+v", guy)
 
-	fmt.Println(caty)
-	fmt.Printf("%+v", caty)
+	guy.print()
+	caty.print()
+}
+
+func (p person) print() {
+	fmt.Println(p)
+	fmt.Printf("%+v", p)
 }
