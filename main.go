@@ -31,7 +31,13 @@ func main() {
 	}
 
 	guy.print()
+	catyPointer := &caty
+	catyPointer.updateName("Catherine")
 	caty.print()
+}
+
+func (pointerToPerson *person) updateName(newFirstName string) {
+	(pointerToPerson).first = newFirstName
 }
 
 func (p person) print() {
