@@ -3,9 +3,9 @@ package main
 import "fmt"
 
 type person struct {
-	first   string
-	last    string
-	contact contactInfo
+	first string
+	last  string
+	contactInfo
 }
 
 type contactInfo struct {
@@ -18,13 +18,13 @@ func main() {
 	var guy person
 	guy.first = "Guy"
 	guy.last = "Cherkesky"
-	guy.contact.email = "jsdfkjdsfksd"
-	guy.contact.zip = 987987
+	guy.contactInfo.email = "jsdfkjdsfksd"
+	guy.contactInfo.zip = 987987
 
 	caty := person{
 		first: "Caty",
 		last:  "Cherkesky",
-		contact: contactInfo{
+		contactInfo: contactInfo{
 			email: "SDfsdfsdf",
 			zip:   3224424,
 		},
